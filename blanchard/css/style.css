@@ -34,19 +34,20 @@
   font-style: normal;
 }
 
-/* -------- */
-
 :root {
-  --gap: 32px;
-  --light-green: #97EE3F;
-  --light-orange: #FFB84D;
-  --orange: #FF9900;
-  --dark-orange: #E1670E;
+  --gap: 50px;
+  --green: #30BF39;
+  --blue: #26A5E4;
+  --white-violet: #D1A9F0;
+  --light-violet: #C283F3;
+  --violet: #9D5CD0;
+  --dark-violet: #7943A4;
   --white: #FFF;
-  --white-gray: #cacaca;
-  --light-gray: rgba(0, 0, 0, 0.5);
-  --gray: #666;
-  --dark-gray: #414141;
+  --white-gray: #ECECEC;
+  --light-gray: #CACACA;
+  --gray: #999;
+  --dark-gray: #666;
+  --black-gray: #333333;
   --black: #000;
 }
 
@@ -98,9 +99,38 @@ body {
 }
 
 .btn {
-  border-radius: 16px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 100px;
+}
+
+.text {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 32px;
+  color: var(--black-gray);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--black-gray);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black-gray);
+}
+
+.header-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
   color: var(--white);
 }
+
+/* header */
