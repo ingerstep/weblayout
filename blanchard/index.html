@@ -7,11 +7,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard - художественная галерея</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/choices-img.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container flex header__wrapper">
+        <img class="header__logo" src="img/header-logo.svg" alt="Логотип Blanchard">
+        <nav class="header__nav">
+          <ul class="header__list list-reset flex">
+            <li class="header__item header-text"><a href="#" class="header__link">О нас</a></li>
+            <li class="header__item header-text"><a href="#" class="header__link">Галерея</a></li>
+            <li class="header__item header-text"><a href="#" class="header__link">Каталог</a></li>
+            <li class="header__item header-text"><a href="#" class="header__link">События</a></li>
+            <li class="header__item header-text"><a href="#" class="header__link">Проекты</a></li>
+            <li class="header__item header-text"><a href="#" class="header__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="header__login header-text">Войти</a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container flex header__wrapper">
+        <ul class="header__select-list flex list-reset">
+          <li class="header__select-item">
+            <select name="select">
+              <option class="disabled" selected disabled>Реализм</option>
+              <option value="tintoretto">Тинторетто</option>
+              <option value="friedrich">Фридрих</option>
+              <option value="leonardo">Леонардо</option>
+              <option value="verrocchio">Верроккьо</option>
 
+              <option value="tintoretto">Тинторетто</option>
+              <option value="friedrich">Фридрих</option>
+              <option value="leonardo">Леонардо</option>
+              <option value="verrocchio">Верроккьо</option>
+              <option value="tintoretto">Тинторетто</option>
+              <option value="friedrich">Фридрих</option>
+              <option value="leonardo">Леонардо</option>
+              <option value="verrocchio">Верроккьо</option>
+            </select>
+          </li>
+          <li class="header__select-item">
+            <select name="select">
+              <option class="disabled" selected disabled>Импрессионизм</option>
+              <option value="mone">Моне</option>
+              <option value="sisley">Сислей</option>
+              <option value="mane">Мане</option>
+              <option value="renuar">Ренуар</option>
+            </select>
+          </li>
+          <li class="header__select-item">
+            <select name="select">
+              <option class="disabled" selected disabled>Постимпрессионизм</option>
+              <option value="vangog">Ван Гог</option>
+              <option value="sezann">Сезанн</option>
+              <option value="gogen">Гоген</option>
+              <option value="sera">Сёра</option>
+            </select>
+          </li>
+          <li class="header__select-item">
+            <select name="select">
+              <option class="disabled" selected disabled>Авангард</option>
+              <option value="kandinsky">Кандинский</option>
+              <option value="marinetti">Маринетти</option>
+              <option value="malevich">Малевич</option>
+              <option value="picasso">Пикассо</option>
+            </select>
+          </li>
+          <li class="header__select-item">
+            <select name="select">
+              <option class="disabled" selected disabled>Футуризм</option>
+              <option value="carra">Карра</option>
+              <option value="pratella">Прателла</option>
+              <option value="severini">Северини</option>
+              <option value="balla">Балла</option>
+            </select>
+          </li>
+        </ul>
+        <input type="text" class="header__search">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="libs/choices.min.js"></script>
+  <script src="js/choices-select.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/simlebar-prop.js"></script>
 </body>
 
 </html>
