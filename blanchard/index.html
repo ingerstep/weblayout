@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard - художественная галерея</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/choices-img.css">
 </head>
 
 <body>
@@ -33,78 +32,149 @@
     </div>
     <div class="header__bottom">
       <div class="container flex header__wrapper">
-        <ul class="header__select-list flex list-reset">
-          <li class="header__select-item">
-            <select name="select">
-              <option class="disabled" selected disabled>Реализм</option>
-              <option value="tintoretto">Тинторетто</option>
-              <option value="friedrich">Фридрих</option>
-              <option value="leonardo">Леонардо</option>
-              <option value="verrocchio">Верроккьо</option>
-
-              <option value="tintoretto">Тинторетто</option>
-              <option value="friedrich">Фридрих</option>
-              <option value="leonardo">Леонардо</option>
-              <option value="verrocchio">Верроккьо</option>
-              <option value="tintoretto">Тинторетто</option>
-              <option value="friedrich">Фридрих</option>
-              <option value="leonardo">Леонардо</option>
-              <option value="verrocchio">Верроккьо</option>
-            </select>
+        <ul class="list-reset menu__list flex">
+          <li class="menu__item">
+            <button class="btn-reset menu__btn header-text">Реализм</button>
+            <div class="dropdown menu__dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="tintoretto">Тинторетто</li>
+                  <li class="dropdown__item" data-value="friedrich">Фридрих</li>
+                  <li class="dropdown__item" data-value="leonardo">Леонардо</li>
+                  <li class="dropdown__item" data-value="verrocchio">Верроккьо</li>
+                </ul>
+              </div>
+            </div>
           </li>
-          <li class="header__select-item">
-            <select name="select">
-              <option class="disabled" selected disabled>Импрессионизм</option>
-              <option value="mone">Моне</option>
-              <option value="sisley">Сислей</option>
-              <option value="mane">Мане</option>
-              <option value="renuar">Ренуар</option>
-            </select>
+          <li class="menu__item">
+            <button class="btn-reset menu__btn header-text">Импрессионизм</button>
+            <div class="dropdown menu__dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="mone">Моне</li>
+                  <li class="dropdown__item" data-value="sisley">Сислей</li>
+                  <li class="dropdown__item" data-value="mane">Мане</li>
+                  <li class="dropdown__item" data-value="renuar">Ренуар</li>
+                </ul>
+              </div>
+            </div>
           </li>
-          <li class="header__select-item">
-            <select name="select">
-              <option class="disabled" selected disabled>Постимпрессионизм</option>
-              <option value="vangog">Ван Гог</option>
-              <option value="sezann">Сезанн</option>
-              <option value="gogen">Гоген</option>
-              <option value="sera">Сёра</option>
-            </select>
+          <li class="menu__item">
+            <button class="btn-reset menu__btn header-text">Постимпрессионизм</button>
+            <div class="dropdown menu__dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="vangog">Ван Гог</li>
+                  <li class="dropdown__item" data-value="sezann">Сезанн</li>
+                  <li class="dropdown__item" data-value="gogen">Гоген</li>
+                  <li class="dropdown__item" data-value="sera">Сёра</li>
+                </ul>
+              </div>
+            </div>
           </li>
-          <li class="header__select-item">
-            <select name="select">
-              <option class="disabled" selected disabled>Авангард</option>
-              <option value="kandinsky">Кандинский</option>
-              <option value="marinetti">Маринетти</option>
-              <option value="malevich">Малевич</option>
-              <option value="picasso">Пикассо</option>
-            </select>
+          <li class="menu__item">
+            <button class="btn-reset menu__btn header-text">Авангард</button>
+            <div class="dropdown menu__dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="kandinsky">Кандинский</li>
+                  <li class="dropdown__item" data-value="marinetti">Маринетти</li>
+                  <li class="dropdown__item" data-value="malevich">Малевич</li>
+                  <li class="dropdown__item" data-value="picasso">Пикассо</li>
+                </ul>
+              </div>
+            </div>
           </li>
-          <li class="header__select-item">
-            <select name="select">
-              <option class="disabled" selected disabled>Футуризм</option>
-              <option value="carra">Карра</option>
-              <option value="pratella">Прателла</option>
-              <option value="severini">Северини</option>
-              <option value="balla">Балла</option>
-            </select>
+          <li class="menu__item">
+            <button class="btn-reset menu__btn header-text">Футуризм</button>
+            <div class="dropdown menu__dropdown">
+              <div class="dropdown__simplebar">
+                <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="carra">Карра</li>
+                  <li class="dropdown__item" data-value="pratella">Прателла</li>
+                  <li class="dropdown__item" data-value="severini">Северини</li>
+                  <li class="dropdown__item" data-value="balla">Балла</li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
-        <input type="text" class="header__search">
+        <form action="">
+          <button class="btn-reset search-btn">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
+                fill="white" />
+            </svg>
+          </button>
+          <input type="text" class="header__search header-text" placeholder="Поиск по сайту">
+          <button class="btn-reset btn-closed">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
+                fill="white" />
+              <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
+                fill="white" />
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </header>
 
   <main>
-
+    <section class="hero">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+      </div>
+      <div class="container hero__container">
+        <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+        <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений</p>
+        <button class="hero__btn btn btn-reset header-text">Подписаться на рассылку</button>
+      </div>
+    </section>
+    <section class="about section-gap">
+      <div class="container">
+        <h2 class="title about__title">О нас</h2>
+        <p class="text about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+          однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
+          внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+          влечёт за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+          что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого
+          ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках
+          спецификации современных стандартов, действия представителей оппозиции набирают популярность среди
+          определённых слоёв населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+    <section class="galery section-gap">
+      <div class="container flex">
+        <div class="galery__content flex">
+          <h2 class="title galery__title">Галерея</h2>
+          <span class="text galery__filter">Фильтр:</span>
+          <select name="select">
+            <option value="">Живопись</option>
+            <option value="">Рисунок</option>
+            <option value="">Скульптура</option>
+          </select>
+        </div>
+        <div class="galery__slider"></div>
+      </div>
+    </section>
   </main>
 
   <footer>
 
   </footer>
-  <script src="libs/choices.min.js"></script>
-  <script src="js/choices-select.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="js/simlebar-prop.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper-prop.js"></script>
 </body>
 
 </html>
