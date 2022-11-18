@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -125,11 +126,11 @@
 
   <main>
     <section class="hero">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+      <div class="hero__swiper">
+        <div class="hero__wrapper">
+          <div class="hero__slide"></div>
+          <div class="hero__slide"></div>
+          <div class="hero__slide"></div>
         </div>
       </div>
       <div class="container hero__container">
@@ -158,12 +159,58 @@
           <h2 class="title galery__title">Галерея</h2>
           <span class="text galery__filter">Фильтр:</span>
           <select name="select">
-            <option value="">Живопись</option>
-            <option value="">Рисунок</option>
-            <option value="">Скульптура</option>
+            <option value="Живопись">Живопись</option>
+            <option value="Рисунок">Рисунок</option>
+            <option value="Скульптура">Скульптура</option>
           </select>
+          <div class="galery__checkbox">
+            <label for="19thcentury" class="text galery__label">
+              <input class="checkbox__item text" type="checkbox" name="19thcentury" id="19thcentury"
+                value="XIX&nbsp;век">
+              XIX&nbsp;век
+              <span></span>
+            </label>
+            <label for="20thcentury" class="text galery__label">
+              <input class="checkbox__item text" type="checkbox" name="20thcentury" id="20thcentury"
+                value="XX&nbsp;век">
+              XX&nbsp;век
+              <span></span>
+            </label>
+            <label for="modern" class="text galery__label">
+              <input class="checkbox__item text" type="checkbox" name="modern" id="modern" value="Современность">
+              Современность
+              <span></span>
+            </label>
+          </div>
         </div>
-        <div class="galery__slider"></div>
+        <div class="galery__slider">
+          <div class="galery__swiper">
+            <div class="galery__wrapper">
+              <div class="galery__slide">
+                <img src="img/galery-slide-1.png" alt="#">
+                <img src="img/galery-slide-2.png" alt="#">
+                <img src="img/galery-slide-3.png" alt="#">
+
+              </div>
+              <div class="galery__slide">
+                <img src="img/galery-slide-4.png" alt="#">
+                <img src="img/galery-slide-5.png" alt="#">
+                <img src="img/galery-slide-6.png" alt="#">
+
+              </div>
+              <!-- <div class="galery__slide">
+              </div>
+              <div class="galery__slide">
+              </div>
+              <div class="galery__slide">
+              </div>
+              <div class="galery__slide">
+              </div> -->
+            </div>
+            <div class="galery__button-next"></div>
+            <div class="galery__button-perv"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -175,6 +222,8 @@
   <script src="js/simlebar-prop.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/swiper-prop.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="js/choices-select.js"></script>
 </body>
 
 </html>
