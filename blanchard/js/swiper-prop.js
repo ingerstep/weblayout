@@ -1,5 +1,8 @@
 const heroSwiper = document.querySelector('.hero__swiper');
 const galerySwiper = document.querySelector('.galery__swiper')
+const galeryCounterPerv = document.querySelector('.swiper2-button-prev')
+const galeryCounterNext = document.querySelector('.swiper2-button-next')
+const galeryCounterText = document.querySelector('.galery__counter')
 
 const swiperHero = new Swiper(heroSwiper, {
   containerModifierClass: 'hero__swiper',
@@ -13,18 +16,27 @@ const swiperHero = new Swiper(heroSwiper, {
   },
   effect: "fade",
   allowTouchMove: false,
+  navigation: false,
 })
 
 const swiperGalery = new Swiper(galerySwiper, {
-  slidesPerView: 'auto',
-  spaceBetween: 49,
+  slidesPerView: 3,
+  slidesPerGroup: 3,
   containerModifierClass: 'galery__swiper',
   slideClass: 'galery__slide',
   wrapperClass: 'galery__wrapper',
-  slideDuplicateNextClass: 'galery__button-next',
-  slideDuplicatePervClass: 'galery__button-perv',
   navigation: {
-    nextEl: '.galery__button-next',
-    prevEl: '.galery__button-prev',
+    nextEl: '.swiper2-button-next',
+    prevEl: '.swiper2-button-prev',
   },
+
 })
+
+galeryCounterNext.addEventListener('click', e => {
+  galeryCounterText.textContent = '2 / 2'
+})
+
+galeryCounterPerv.addEventListener('click', e => {
+  galeryCounterText.textContent = '1 / 2'
+})
+
