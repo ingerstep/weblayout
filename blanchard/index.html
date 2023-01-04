@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard - художественная галерея</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/accordion.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -33,7 +34,7 @@
     </div>
     <div class="header__bottom">
       <div class="container flex header__wrapper">
-        <ul class="list-reset menu__list flex">
+        <ul class="list-reset menu flex">
           <li class="menu__item">
             <button class="btn-reset menu__btn header-text">Реализм</button>
             <div class="dropdown menu__dropdown">
@@ -100,7 +101,7 @@
             </div>
           </li>
         </ul>
-        <form action="">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
           <button class="btn-reset search-btn">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695"
@@ -165,19 +166,18 @@
           </select>
           <div class="galery__checkbox">
             <label for="19thcentury" class="text galery__label">
-              <input class="checkbox__item text" type="checkbox" name="19thcentury" id="19thcentury"
+              <input class="galery__input text" type="checkbox" name="19thcentury" id="19thcentury"
                 value="XIX&nbsp;век">
               XIX&nbsp;век
               <span></span>
             </label>
             <label for="20thcentury" class="text galery__label">
-              <input class="checkbox__item text" type="checkbox" name="20thcentury" id="20thcentury"
-                value="XX&nbsp;век">
+              <input class="galery__input text" type="checkbox" name="20thcentury" id="20thcentury" value="XX&nbsp;век">
               XX&nbsp;век
               <span></span>
             </label>
             <label for="modern" class="text galery__label">
-              <input class="checkbox__item text" type="checkbox" name="modern" id="modern" value="Современность">
+              <input class="galery__input text" type="checkbox" name="modern" id="modern" value="Современность">
               Современность
               <span></span>
             </label>
@@ -234,6 +234,294 @@
         </div>
       </div>
     </section>
+    <section class="catalog section-gap">
+      <div class="container">
+        <h2 class="title catalog__title">Каталог</h2>
+        <p class="text catalog__text">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="catalog__content flex">
+          <div class="artist">
+            <div class="flex artist__card artist__card--active" data-path="ghirlandaio">
+              <img src="img/ghirlandaio.png" alt="Портрет художника" class="artist__img">
+              <span class="artist__name subtitle">Доменико Гирландайо</span>
+              <span class="artist__life">2 июня 1448–11 января 1494</span>
+              <p class="artist__descr text">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной
+                династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
+                Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых
+                выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли
+                выступают
+                знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="flex artist__card" data-path="bottichini">
+              <img src="img/bottichini.png" alt="Портрет художника" class="artist__img">
+              <span class="artist__name subtitle">Боттичини, Рафаэлло</span>
+              <span class="artist__life">11 сентября 1477–1520</span>
+              <p class="artist__descr text">По мнению исследователей его творчества, это был художник скромного
+                дарования,
+                никогда не стремившийся завоевать высоких позиций в интеллектуальном и финансовом центре Тосканы —
+                Флоренции, и довольствовавшийся заказами, которые ему давали провинциальные храмы. Его искусство было
+                эклектичным, и наряду с влиянием отца включало связь с искусством Перуджино, Ридольфо Гирландайо,
+                Лоренцо ди Креди, Фра Бартоломео и др.</p>
+            </div>
+            <div class="flex artist__card" data-path="ambrodjo">
+              <img src="img/ambrodjo.png" alt="Портрет художника" class="artist__img">
+              <span class="artist__name subtitle">Бергоньоне, Амброджо</span>
+              <span class="artist__life">1453-1523</span>
+              <p class="artist__descr text">Прозвище говорит о его тяготении к бургундской школе, по манере ему близок
+                Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской
+                обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви
+                Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике
+                Сан-Симпличано.</p>
+            </div>
+          </div>
+          <ul class="catalog__list list-reset accordion-list">
+            <li class="catalog__item flex accordion">
+              <div class="flex catalog__wrapper">
+                <h3 class="catalog__date subtitle flex">C 1400 по 1499 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content">
+                <ul class="list-reset artists flex">
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Бенедетто ди Биндо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn" data-name="ambrodjo">Бергоньоне, Амброджо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Биссоло, Франческо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Больтраффио, Джованни</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Бонсиньори, Франческо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn" data-name="bottichini">Боттичини, Рафаэлло</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Брамантино</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Бреа, Людовико</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Бьяджо д’Антонио Туччи</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Веккьетта</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Андреа Верроккьо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn" data-name="ghirlandaio">Доменико Гирландайо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Беноццо Гоццоли</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Граначчи, Франческо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Грегорио ди Чекко</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Джованни да Удине</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Джованни ди Паоло</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Джорджоне</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Парентино, Бернардо</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Пезеллино</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Пьетро Перуджино</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Перуцци, Бальдассаре</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Пизанелло</button>
+                  </li>
+                  <li class="artists__item">
+                    <button class="btn-reset text artists__btn">Пинтуриккьо</button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 1500 по 1599 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 1600 по 1699 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 1700 по 1799 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 1800 по 1899 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 1900 по 1999 гг</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item flex accordion">
+              <div class="catalog__wrapper flex">
+                <h3 class="catalog__date subtitle flex">C 2000 г</h3>
+                <button class="btn-reset catalog__button accordion__control" aria-label="Раскрыть статью">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      fill="#ECECEC" />
+                    <path
+                      d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                      stroke="white" />
+                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                  </svg>
+                </button>
+              </div>
+              <div class="accordion__content flex">
+                <img src="img/catalog-empty.png" alt="Фото галерея" class="accordion__empty">
+                <div class="catalog__empty-descr">
+                  <h3>Здесь пока пусто</h3>
+                  <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
+                  <a href="">В галерею</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -245,6 +533,9 @@
   <script src="js/swiper-prop.js"></script>
   <script src="libs/choices.min.js"></script>
   <script src="js/choices-select.js"></script>
+  <script src="libs/accordion.min.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/catalog-tabs.js"></script>
 </body>
 
 </html>
