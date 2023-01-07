@@ -1,9 +1,10 @@
 const heroSwiper = document.querySelector('.hero__swiper');
-const galerySwiper = document.querySelector('.galery__swiper')
-const eventsSwiper = document.querySelector('.events__swiper')
-const galeryCounterPerv = document.querySelector('.swiper2-button-prev')
-const galeryCounterNext = document.querySelector('.swiper2-button-next')
-const galeryCounterText = document.querySelector('.galery__counter')
+const galerySwiper = document.querySelector('.galery__swiper');
+const eventsSwiper = document.querySelector('.events__swiper');
+const projectsSwiper = document.querySelector('.projects__swiper');
+const galeryCounterPerv = document.querySelector('.swiper2-button-prev');
+const galeryCounterNext = document.querySelector('.swiper2-button-next');
+const galeryCounterText = document.querySelector('.galery__counter');
 
 const swiperHero = new Swiper(heroSwiper, {
   containerModifierClass: 'hero__swiper',
@@ -50,5 +51,18 @@ const swiperEvents = new Swiper(eventsSwiper, {
   navigation: {
     nextEl: '.events-button-next',
     prevEl: '.events-button-prev',
+  },
+})
+
+const swiperProjects = new Swiper(projectsSwiper, {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  containerModifierClass: 'projects__swiper',
+  slideClass: 'projects__slide',
+  wrapperClass: 'projects__wrapper',
+  navigation: {
+    nextEl: '.projects-button-next',
+    prevEl: '.projects-button-prev',
   },
 })
