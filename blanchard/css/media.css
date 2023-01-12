@@ -1,0 +1,44 @@
+@media (max-width: 1780px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .galery__slider {
+    width: 930px;
+  }
+
+  .galery__slide {
+    padding-right: 10px;
+  }
+
+  .contacts__container {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacts__list {
+    justify-content: center;
+  }
+
+  .contacts__text,
+  .form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1620px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 360px) {}

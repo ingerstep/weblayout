@@ -2,8 +2,8 @@ const heroSwiper = document.querySelector('.hero__swiper');
 const galerySwiper = document.querySelector('.galery__swiper');
 const eventsSwiper = document.querySelector('.events__swiper');
 const projectsSwiper = document.querySelector('.projects__swiper');
-const galeryCounterPerv = document.querySelector('.swiper2-button-prev');
-const galeryCounterNext = document.querySelector('.swiper2-button-next');
+const galeryCounterPerv = document.querySelector('.galery-button-prev');
+const galeryCounterNext = document.querySelector('.galery-button-next');
 const galeryCounterText = document.querySelector('.galery__counter');
 
 const swiperHero = new Swiper(heroSwiper, {
@@ -28,8 +28,8 @@ const swiperGalery = new Swiper(galerySwiper, {
   slideClass: 'galery__slide',
   wrapperClass: 'galery__wrapper',
   navigation: {
-    nextEl: '.swiper2-button-next',
-    prevEl: '.swiper2-button-prev',
+    nextEl: '.galery-button-next',
+    prevEl: '.galery-button-prev',
   },
 })
 
