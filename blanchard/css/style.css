@@ -143,6 +143,12 @@ body {
   position: relative;
 }
 
+.burger,
+.header__form,
+.btn-closed {
+  display: none;
+}
+
 .header__top {
   background: var(--black);
   padding-top: 30px;
@@ -150,6 +156,7 @@ body {
 }
 
 .header__wrapper {
+  position: relative;
   align-items: center;
 }
 
@@ -363,10 +370,6 @@ body {
 
 .search-btn {
   transform: translate(-6px, 7px);
-}
-
-.btn-closed {
-  display: none;
 }
 
 /* main */
