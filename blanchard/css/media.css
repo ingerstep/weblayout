@@ -8,10 +8,6 @@
     width: 930px;
   }
 
-  .galery__slide {
-    padding-right: 10px;
-  }
-
   .contacts__container {
     align-items: center;
     flex-direction: column;
@@ -219,19 +215,19 @@
   }
 
   .hero__slide:nth-child(1) {
-    background: url('../img/hero-bg-1-1024.png');
+    background-image: url('../img/hero-bg-1-1024.png');
   }
 
   .hero__slide:nth-child(2) {
-    background: url('../img/hero-bg-2-1024.png');
+    background-image: url('../img/hero-bg-2-1024.png');
   }
 
   .hero__slide:nth-child(3) {
-    background: url('../img/hero-bg-3-1024.png');
+    background-image: url('../img/hero-bg-3-1024.png');
   }
 
   .galery {
-    padding-bottom: 73px;
+    padding-bottom: 104px;
   }
 
   .galery__content {
@@ -239,7 +235,35 @@
   }
 
   .galery__slider {
-    width: 627px;
+    width: 592px;
+  }
+
+  .galery__swiper {
+    height: 376px;
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-1024.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-1024.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-1024.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-1024.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-1024.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6-1024.png');
   }
 
   .choices {
@@ -266,8 +290,8 @@
   }
 
   .events__text {
-    padding: 10px 34px 49px 32px;
-    height: 478px;
+    padding: 15px 34px 49px 32px;
+    height: 483px;
   }
 
   .events__subtitle {
@@ -301,6 +325,30 @@
 
   .events__wrapper {
     margin-bottom: 30px;
+  }
+
+  .events__img {
+    height: 200px;
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-1024.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-1024.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-1024.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-1024.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-1024.png');
   }
 
   .projects {
@@ -340,8 +388,548 @@
   }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+  .hero__slide:nth-child(1) {
+    background-image: url('../img/hero-bg-1-768.png');
+  }
 
-@media (max-width: 576px) {}
+  .hero__slide:nth-child(2) {
+    background-image: url('../img/hero-bg-2-768.png');
+  }
 
-@media (max-width: 360px) {}
+  .hero__slide:nth-child(3) {
+    background-image: url('../img/hero-bg-3-768.png');
+  }
+
+  .header__form {
+    z-index: 10000;
+  }
+
+  .header__input--active {
+    background-color: black;
+    width: 576px;
+    transform: translateX(-594px);
+  }
+
+  .header__input--active::placeholder {
+    color: transparent;
+  }
+
+  .header__btn--active {
+    transform: translateX(-653px);
+  }
+
+  .header__btn--active::before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 0;
+    right: -506px;
+    bottom: -10px;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+  }
+
+  .galery__container {
+    flex-direction: column;
+  }
+
+  .choices {
+    width: 281px;
+    margin-bottom: 41px;
+  }
+
+  .galery__content {
+    margin-bottom: 15px;
+  }
+
+  .galery__slider {
+    width: 669px;
+  }
+
+  .galery__swiper {
+    height: 390px;
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-768.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-768.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-768.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-768.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-768.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6-768.png');
+  }
+
+  .catalog__content {
+    flex-direction: column-reverse;
+  }
+
+  .artist {
+    width: 100%;
+  }
+
+  .catalog__list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .artists {
+    height: 288px;
+  }
+
+  .artists__item {
+    margin-right: 49px;
+  }
+
+  .artist__img {
+    margin-bottom: 22px;
+  }
+
+  .artist__life {
+    margin-bottom: 6px;
+  }
+
+  .catalog__text {
+    margin-bottom: 20px;
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-768.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-768.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-768.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-768.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-768.png');
+  }
+
+  .projects__descr,
+  .projects__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .projects__slide {
+    justify-content: center;
+    height: 106px;
+  }
+
+  .contacts__address {
+    line-height: 39px;
+  }
+
+  .contacts__text {
+    margin-bottom: 19px;
+  }
+
+  .form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-wrapper {
+    width: calc((100% - (19px * 1)) / 2);
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts__btn {
+    padding: 11px 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero__slide:nth-child(1) {
+    background-image: url('../img/hero-bg-1-320.png');
+  }
+
+  .hero__slide:nth-child(2) {
+    background-image: url('../img/hero-bg-2-320.png');
+  }
+
+  .hero__slide:nth-child(3) {
+    background-image: url('../img/hero-bg-3-320.png');
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-320.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-320.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-320.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-320.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-320.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6.png');
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-320.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-320.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-320.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-320.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-320.png');
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 1px;
+  }
+
+  .hero__text {
+    padding: 0 20px;
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .search-btn svg,
+  .btn-closed svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-closed {
+    top: 7px;
+  }
+
+  .burger {
+    width: 25px;
+    height: 18px;
+  }
+
+  .header__logo {
+    width: 97px;
+    margin-right: -2px;
+  }
+
+  .header__top {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-right: -5px;
+  }
+
+  .search-btn {
+    top: 5px;
+    transform: translateX(-24%);
+  }
+
+  .header__search {
+    max-width: 218px;
+  }
+
+  .header__btn--active {
+    transform: translate(-280px, 2px);
+  }
+
+  .header__input--active {
+    transform: translateX(-230px);
+  }
+
+  .hero__container {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 45px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .hero__btn {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 20px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  .about__title {
+    margin-bottom: 11px;
+  }
+
+  .about {
+    padding-bottom: 41px;
+  }
+
+  .galery {
+    padding-top: 50px;
+    padding-bottom: 62px;
+    margin-bottom: 50px;
+  }
+
+  .galery__title {
+    margin-bottom: 12px;
+  }
+
+  .galery__filter {
+    margin-bottom: 6px;
+  }
+
+  .choices {
+    width: 290px;
+    margin-bottom: 32px;
+  }
+
+  .galery__slider {
+    width: 291px;
+  }
+
+  .galery__wrapper {
+    margin-bottom: 19px;
+  }
+
+  .galery__swiper {
+    display: flex;
+    height: 430px;
+    flex-direction: column-reverse;
+  }
+
+  .galery__nav {
+    justify-content: center;
+    margin-bottom: 11px;
+  }
+
+  .galery__content {
+    margin-bottom: 5px;
+  }
+
+  .catalog {
+    margin-bottom: 52px;
+  }
+
+  .catalog__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__title {
+    margin-bottom: 12px;
+  }
+
+  .catalog__text {
+    display: none;
+  }
+
+  .catalog__date {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .catalog__button {
+    padding: 21px 0 20px;
+  }
+
+  .catalog__button svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .artists {
+    height: 100%;
+    margin: 20px 0;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .artist__name {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .artist__life {
+    margin-bottom: 12px;
+  }
+
+  .events {
+    margin-bottom: 50px;
+  }
+
+  .events__title {
+    margin-bottom: 11px;
+  }
+
+  .events__text {
+    padding: 23px 9px 49px 22px;
+    height: 482px;
+  }
+
+  .events__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .events__text a {
+    transform: translate(7px, -1px);
+  }
+
+  .events__link {
+    font-size: 16px;
+  }
+
+  .events__date {
+    transform: translate(-7px, -7px);
+  }
+
+  .events__descr {
+    padding-right: 19px;
+  }
+
+  .events__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .projects__title {
+    margin-bottom: 11px;
+  }
+
+  .projects__descr {
+    margin-bottom: 19px;
+  }
+
+  .projects__subtitle {
+    margin-bottom: 10px;
+  }
+
+  .projects__slide {
+    height: 100%;
+  }
+
+  .projects__slider {
+    padding: 0 49px;
+  }
+
+  .projects-button-next,
+  .projects-button-prev {
+    top: 25%;
+  }
+
+  .projects {
+    margin-bottom: 5px;
+  }
+
+  .contacts__wrapper {
+    border: none;
+  }
+
+  .contacts__address {
+    line-height: 21px;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    padding: 3px 24px;
+  }
+
+  .contacts__btn {
+    padding: 11px 33px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+
+  .contacts__links svg {
+    width: 49px;
+    height: 49px;
+  }
+
+  .contacts__container {
+    padding-bottom: 18px;
+  }
+
+  .map {
+    height: 320px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__link svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__container .header__logo {
+    width: 97px;
+  }
+
+  .footer__list {
+    margin-bottom: 16px;
+  }
+}

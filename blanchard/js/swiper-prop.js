@@ -2,6 +2,12 @@ const heroSwiper = document.querySelector('.hero__swiper');
 const galerySwiper = document.querySelector('.galery__swiper');
 const eventsSwiper = document.querySelector('.events__swiper');
 const projectsSwiper = document.querySelector('.projects__swiper');
+const buttonContacts = document.querySelector('.contacts__btn');
+const mediaQuery = window.matchMedia('(max-width: 576px)');
+
+if (mediaQuery.matches) {
+  buttonContacts.textContent = 'Заказать';
+}
 
 const swiperHero = new Swiper(heroSwiper, {
   containerModifierClass: 'hero__swiper',
@@ -25,10 +31,17 @@ const swiperGalery = new Swiper(galerySwiper, {
       slidesPerGroup: 1,
     },
     768: {
+      spaceBetween: 38,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-    1025: {
+    1024: {
+      spaceBetween: 38,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1440: {
+      spaceBetween: 50,
       slidesPerView: 3,
       slidesPerGroup: 3,
     },
@@ -47,20 +60,26 @@ const swiperGalery = new Swiper(galerySwiper, {
 })
 
 const swiperEvents = new Swiper(eventsSwiper, {
-  spaceBetween: 50,
   breakpoints: {
     320: {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    769: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+    },
+    1024: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 27,
     },
-    1025: {
+    1440: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 50,
-    },
+    }
   },
   pagination: {
     el: '.events-pagination',
@@ -83,7 +102,7 @@ const swiperProjects = new Swiper(projectsSwiper, {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-    769: {
+    768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },

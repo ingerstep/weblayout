@@ -405,6 +405,9 @@ body {
 
 .hero__slide {
   flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__title {
@@ -461,15 +464,15 @@ body {
 }
 
 .hero__slide:nth-child(1) {
-  background: url('../img/hero-bg-1.png');
+  background-image: url('../img/hero-bg-1.png');
 }
 
 .hero__slide:nth-child(2) {
-  background: url('../img/hero-bg-2.png');
+  background-image: url('../img/hero-bg-2.png');
 }
 
 .hero__slide:nth-child(3) {
-  background: url('../img/hero-bg-3.png');
+  background-image: url('../img/hero-bg-3.png');
 }
 
 .about {
@@ -491,6 +494,38 @@ body {
   padding-bottom: 81px;
   margin-bottom: 80px;
   background: url('../img/galery-bg.png') no-repeat center / cover;
+}
+
+.galery__img,
+.events__img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.galery-1 {
+  background-image: url('../img/galery-slide-1.png');
+}
+
+.galery-2 {
+  background-image: url('../img/galery-slide-2.png');
+}
+
+.galery-3 {
+  background-image: url('../img/galery-slide-3.png');
+}
+
+.galery-4 {
+  background-image: url('../img/galery-slide-4.png');
+}
+
+.galery-5 {
+  background-image: url('../img/galery-slide-5.png');
+}
+
+.galery-6 {
+  background-image: url('../img/galery-slide-6.png');
 }
 
 .galery__title {
@@ -642,7 +677,7 @@ body {
 }
 
 .galery__slider {
-  width: 1200px;
+  width: 1147px;
   height: 100%;
   transform: translateY(24px);
 }
@@ -977,6 +1012,30 @@ body {
   flex-direction: column;
 }
 
+.events__img {
+  height: 300px;
+}
+
+.events-1 {
+  background-image: url('../img/events-engraving.png');
+}
+
+.events-2 {
+  background-image: url('../img/events-petrov-iliin.png');
+}
+
+.events-3 {
+  background-image: url('../img/events-formation2020.png');
+}
+
+.events-4 {
+  background-image: url('../img/events-metaphor.png');
+}
+
+.events-5 {
+  background-image: url('../img/events-biennale.png');
+}
+
 .events__title {
   margin: 0;
   margin-bottom: 15px;
@@ -993,9 +1052,9 @@ body {
 }
 
 .events__text {
-  padding: 10px 48px 42px 50px;
+  padding: 13px 49px 38px 50px;
   flex-direction: column;
-  min-height: 396px;
+  min-height: 398px;
   border: 1px solid var(--light-gray);
   border-top: none;
 }
@@ -1346,6 +1405,11 @@ body {
 
 .just-validate-error-field {
   border-color: var(--red);
+}
+
+.map {
+  width: 100%;
+  height: 700px;
 }
 
 .ymaps-2-1-79-ground-pane {
