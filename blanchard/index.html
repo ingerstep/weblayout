@@ -49,12 +49,12 @@
         </div>
         <nav class="header__nav">
           <ul class="header__list list-reset flex">
-            <li class="header__item header-text"><a href="#" class="header__link">О нас</a></li>
-            <li class="header__item header-text"><a href="#" class="header__link">Галерея</a></li>
-            <li class="header__item header-text"><a href="#" class="header__link">Каталог</a></li>
-            <li class="header__item header-text"><a href="#" class="header__link">События</a></li>
-            <li class="header__item header-text"><a href="#" class="header__link">Проекты</a></li>
-            <li class="header__item header-text"><a href="#" class="header__link">Контакты</a></li>
+            <li class="header__item header-text"><a href="#about" class="header__link">О нас</a></li>
+            <li class="header__item header-text"><a href="#galery" class="header__link">Галерея</a></li>
+            <li class="header__item header-text"><a href="#catalog" class="header__link">Каталог</a></li>
+            <li class="header__item header-text"><a href="#events" class="header__link">События</a></li>
+            <li class="header__item header-text"><a href="#projects" class="header__link">Проекты</a></li>
+            <li class="header__item header-text"><a href="#contacts" class="header__link">Контакты</a></li>
           </ul>
         </nav>
         <a href="#" class="header__login header-text">
@@ -79,6 +79,18 @@
             <div class="dropdown menu__dropdown">
               <div class="dropdown__simplebar">
                 <ul class="dropdown__list list-reset">
+                  <li class="dropdown__item" data-value="tintoretto">
+                    <a href="#" class="dropdown__link">Тинторетто</a>
+                  </li>
+                  <li class="dropdown__item" data-value="friedrich">
+                    <a href="#" class="dropdown__link">Фридрих</a>
+                  </li>
+                  <li class="dropdown__item" data-value="leonardo">
+                    <a href="#" class="dropdown__link">Леонардо</a>
+                  </li>
+                  <li class="dropdown__item" data-value="verrocchio">
+                    <a href="#" class="dropdown__link">Верроккьо</a>
+                  </li>
                   <li class="dropdown__item" data-value="tintoretto">
                     <a href="#" class="dropdown__link">Тинторетто</a>
                   </li>
@@ -229,12 +241,12 @@
         <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
         <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
           предпосылки для новых предложений</p>
-        <button class="hero__btn btn btn-reset header-text">Подписаться на рассылку</button>
+        <a href="#contacts" class="hero__btn btn btn-reset header-text">Подписаться на рассылку</a>
       </div>
     </section>
     <section class="about">
       <div class="container">
-        <h2 class="title about__title">О нас</h2>
+        <h2 id="about" class="title about__title">О нас</h2>
         <p class="text about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
           однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
           внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
@@ -245,7 +257,7 @@
           определённых слоёв населения, а значит, должны быть разоблачены.</p>
       </div>
     </section>
-    <section class="galery">
+    <section id="galery" class="galery">
       <div class="container galery__container flex">
         <div class="galery__content flex">
           <h2 class="title galery__title">Галерея</h2>
@@ -275,7 +287,7 @@
           </div>
         </div>
         <div class="galery__slider">
-          <div class="swiper-container galery__swiper swiper-no-swiping">
+          <div class="swiper-container galery__swiper">
             <div class="flex galery__nav">
               <button class="galery-button-prev btn-reset galery__arrow">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -302,30 +314,50 @@
               </button>
             </div>
             <div class="galery__wrapper">
-              <div class="galery__slide">
+              <button id="open-galery-modal-1" class="galery__slide btn-reset">
                 <div class="galery__img galery-1"></div>
-              </div>
-              <div class="galery__slide">
+              </button>
+              <button id="open-galery-modal-2" class="galery__slide btn-reset">
                 <div class="galery__img galery-2"></div>
-              </div>
-              <div class="galery__slide">
+              </button>
+              <button id="open-galery-modal-3" class="galery__slide btn-reset">
                 <div class="galery__img galery-3"></div>
-              </div>
-              <div class="galery__slide">
+              </button>
+              <button id="open-galery-modal-4" class="galery__slide btn-reset">
                 <div class="galery__img galery-4"></div>
-              </div>
-              <div class="galery__slide">
+              </button>
+              <button id="open-galery-modal-5" class="galery__slide btn-reset">
                 <div class="galery__img galery-5"></div>
-              </div>
-              <div class="galery__slide">
+              </button>
+              <button id="open-galery-modal-6" class="galery__slide btn-reset">
                 <div class="galery__img galery-6"></div>
-              </div>
+              </button>
             </div>
+          </div>
+        </div>
+        <div id="modal-malevich" class="modal">
+          <div class="modal__wrapper">
+            <h2 class="modal__title subtitle">Казимир Малевич</h2>
+            <span class="modal__subtitle">«Женщина с граблями»</span>
+            <span class="modal__date">1931–1932</span>
+            <p class="modal__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник
+              принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской
+              и Варшавской выставок в 1927 году.</p>
+            <button class="btn-reset modal__btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                  fill="black" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="catalog">
+    <section id="catalog" class="catalog">
       <div class="container catalog__container">
         <h2 class="title catalog__title">Каталог</h2>
         <p class="text catalog__text">
@@ -336,9 +368,9 @@
         </p>
         <div class="catalog__content flex">
           <div class="artist">
-            <div class="flex artist__card artist__card--active" data-path="ghirlandaio">
+            <article class="flex artist__card artist__card--active" data-path="ghirlandaio">
               <img src="img/ghirlandaio.png" alt="Портрет художника" class="artist__img">
-              <span class="artist__name subtitle">Доменико Гирландайо</span>
+              <h3 class="artist__name subtitle">Доменико Гирландайо</h3>
               <span class="artist__life">2 июня 1448–11 января 1494</span>
               <p class="artist__descr text">Один из ведущих флорентийских художников Кватроченто, основатель
                 художественной
@@ -347,10 +379,10 @@
                 выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли
                 выступают
                 знатные граждане Флоренции в костюмах того времени).</p>
-            </div>
-            <div class="flex artist__card" data-path="bottichini">
+            </article>
+            <article class="flex artist__card" data-path="bottichini">
               <img src="img/bottichini.png" alt="Портрет художника" class="artist__img">
-              <span class="artist__name subtitle">Боттичини, Рафаэлло</span>
+              <h3 class="artist__name subtitle">Боттичини, Рафаэлло</h3>
               <span class="artist__life">11 сентября 1477–1520</span>
               <p class="artist__descr text">По мнению исследователей его творчества, это был художник скромного
                 дарования,
@@ -358,17 +390,17 @@
                 Флоренции, и довольствовавшийся заказами, которые ему давали провинциальные храмы. Его искусство было
                 эклектичным, и наряду с влиянием отца включало связь с искусством Перуджино, Ридольфо Гирландайо,
                 Лоренцо ди Креди, Фра Бартоломео и др.</p>
-            </div>
-            <div class="flex artist__card" data-path="ambrodjo">
+            </article>
+            <article class="flex artist__card" data-path="ambrodjo">
               <img src="img/ambrodjo.png" alt="Портрет художника" class="artist__img">
-              <span class="artist__name subtitle">Бергоньоне, Амброджо</span>
+              <h3 class="artist__name subtitle">Бергоньоне, Амброджо</h3>
               <span class="artist__life">1453-1523</span>
               <p class="artist__descr text">Прозвище говорит о его тяготении к бургундской школе, по манере ему близок
                 Винченцо Фоппа. Испытал влияние Леонардо да Винчи. Наиболее известен работами 1486—1494 в монастырской
                 обители картезианцев Чертоза ди Павия. Позднее работал в Милане в базилике Сант-Эусторджо и церкви
                 Сан-Сатиро, после 1497 — в Лоди, в 1512 — в Бергамо, незадолго до смерти — снова в Милане, в базилике
                 Сан-Симпличано.</p>
-            </div>
+            </article>
           </div>
           <ul class="catalog__list list-reset accordion-list">
             <li class="catalog__item flex accordion">
@@ -597,13 +629,13 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section id="events" class="events">
       <div class="container">
         <h2 class="title events__title">События</h2>
         <div class="events__slider">
           <div class="events__swiper">
             <div class="events__wrapper flex">
-              <div class="events__slide flex">
+              <article class="events__slide flex">
                 <div class="events__img events-1"></div>
                 <div class="events__text flex">
                   <span class="events__date flex">
@@ -616,8 +648,8 @@
                     династии, которую продолжили его брат Давид и сын Ридольфо</p>
                   <a href="#"><span class="events__link text">Подробнее</span></a>
                 </div>
-              </div>
-              <div class="events__slide flex">
+              </article>
+              <article class="events__slide flex">
                 <div class="events__img events-2"></div>
                 <div class="events__text flex">
                   <span class="events__date flex">
@@ -630,8 +662,8 @@
                     доказательством простого факта</p>
                   <a href="#"><span class="events__link text">Подробнее</span></a>
                 </div>
-              </div>
-              <div class="events__slide flex">
+              </article>
+              <article class="events__slide flex">
                 <div class="events__img events-3"></div>
                 <div class="events__text flex">
                   <span class="events__date flex">
@@ -644,8 +676,8 @@
                     играет важную роль в формировании глубокомысленных рассуждений</p>
                   <a href="#"><span class="events__link text">Подробнее</span></a>
                 </div>
-              </div>
-              <div class="events__slide flex">
+              </article>
+              <article class="events__slide flex">
                 <div class="events__img events-4"></div>
                 <div class="events__text flex">
                   <span class="events__date flex">
@@ -658,8 +690,8 @@
                     династии, которую продолжили его брат Давид и сын Ридольфо</p>
                   <a href="#"><span class="events__link text">Подробнее</span></a>
                 </div>
-              </div>
-              <div class="events__slide flex">
+              </article>
+              <article class="events__slide flex">
                 <div class="events__img events-5"></div>
                 <div class="events__text flex">
                   <span class="events__date flex">
@@ -672,7 +704,7 @@
                   </p>
                   <a href="#"><span class="events__link text">Подробнее</span></a>
                 </div>
-              </div>
+              </article>
             </div>
             <button class="events-button-prev btn-reset btn-effects">
               <svg width="50" height="50" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -701,7 +733,7 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <h2 class="title projects__title">Проекты</h2>
         <div class="text projects__descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение
@@ -819,7 +851,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="contacts__wrapper">
         <div class="container contacts__container flex">
           <div class="contacts__text">
@@ -886,7 +918,7 @@
 
   <footer class="footer">
     <div class="container footer__container flex">
-      <img class="header__logo" src="img/header-logo.svg" alt="Логотип Blanchard">
+      <img class="footer__logo" src="img/header-logo.svg" alt="Логотип Blanchard">
       <ul class="list-reset footer__list flex">
         <li class="footer__item">
           <a href="#" class="footer__link">
@@ -927,6 +959,7 @@
   <script src="js/yandex-map.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

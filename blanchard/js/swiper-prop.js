@@ -3,11 +3,6 @@ const galerySwiper = document.querySelector('.galery__swiper');
 const eventsSwiper = document.querySelector('.events__swiper');
 const projectsSwiper = document.querySelector('.projects__swiper');
 const buttonContacts = document.querySelector('.contacts__btn');
-const mediaQuery = window.matchMedia('(max-width: 576px)');
-
-if (mediaQuery.matches) {
-  buttonContacts.textContent = 'Заказать';
-}
 
 const swiperHero = new Swiper(heroSwiper, {
   containerModifierClass: 'hero__swiper',
@@ -27,10 +22,12 @@ const swiperHero = new Swiper(heroSwiper, {
 const swiperGalery = new Swiper(galerySwiper, {
   breakpoints: {
     320: {
+      allowTouchMove: true,
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
     768: {
+      allowTouchMove: false,
       spaceBetween: 38,
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -46,6 +43,7 @@ const swiperGalery = new Swiper(galerySwiper, {
       slidesPerGroup: 3,
     },
   },
+  allowTouchMove: false,
   containerModifierClass: 'galery__swiper',
   slideClass: 'galery__slide',
   wrapperClass: 'galery__wrapper',

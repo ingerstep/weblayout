@@ -9,6 +9,6 @@ tabsBtn.forEach(element => {
       el.classList.remove('artist__card--active')
     });
 
-    document.querySelector(`[data-path="${path}"]`).classList.add('artist__card--active')
+    document.querySelector(`[data-path="${path}"]`).classList.add('artist__card--active');
   })
 })

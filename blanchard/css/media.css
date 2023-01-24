@@ -202,7 +202,7 @@
 
   .hero__container {
     padding-top: 105px;
-    padding-bottom: 116px;
+    padding-bottom: 137px;
   }
 
   .hero__title {
@@ -211,7 +211,7 @@
 
   .hero__text {
     max-width: 700px;
-    margin-bottom: 132px;
+    margin-bottom: 155px;
   }
 
   .hero__slide:nth-child(1) {
@@ -240,6 +240,10 @@
 
   .galery__swiper {
     height: 376px;
+  }
+
+  .galery__wrapper {
+    height: 315px;
   }
 
   .galery-1 {
@@ -351,8 +355,17 @@
     background-image: url('../img/events-biennale-1024.png');
   }
 
+  .events-button-next,
+  .events-button-prev {
+    display: none;
+  }
+
   .projects {
     margin-bottom: 82px;
+  }
+
+  .projects__title {
+    margin-bottom: 16px;
   }
 
   .projects__slider {
@@ -367,24 +380,37 @@
   }
 
   .contacts__text {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   .contacts__list {
     justify-content: flex-start;
   }
 
+  .contacts__btn {
+    padding: 12px 40px;
+  }
+
   .footer__container {
     padding-top: 40px;
   }
 
-  .footer__container .header__logo {
+  .footer__logo {
     width: 174px;
   }
 
   .footer__link svg {
     width: 60px;
     height: 60px;
+  }
+
+  .modal__wrapper {
+    padding: 121px 50px 173px 314px;
+    background-image: url('../img/modal-1024.png');
+  }
+
+  .modal__text {
+    max-width: 230px;
   }
 }
 
@@ -475,6 +501,10 @@
     background-image: url('../img/galery-slide-6-768.png');
   }
 
+  .galery__wrapper {
+    height: 330px;
+  }
+
   .catalog__content {
     flex-direction: column-reverse;
   }
@@ -560,6 +590,15 @@
   .contacts__btn {
     padding: 11px 28px;
   }
+
+  .modal__wrapper {
+    padding: 121px 36px 173px 351px;
+    background-image: url('../img/modal-768.png');
+  }
+
+  .modal__text {
+    max-width: 281px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -632,7 +671,7 @@
 
   .hero__text {
     padding: 0 20px;
-    margin-bottom: 42px;
+    margin-bottom: 51px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -664,6 +703,33 @@
     margin-right: -5px;
   }
 
+  .header__item {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .header__nav .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .header__nav {
+    padding: 34px 50px 48px 24px;
+  }
+
+  .header__login {
+    padding: 10px 31px;
+    top: 518px;
+    left: 17px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header__login svg {
+    width: 9px;
+    height: 9px;
+  }
+
   .search-btn {
     top: 5px;
     transform: translateX(-24%);
@@ -684,7 +750,7 @@
   .hero__container {
     text-align: center;
     padding-top: 31px;
-    padding-bottom: 45px;
+    padding-bottom: 57px;
   }
 
   .title {
@@ -755,6 +821,10 @@
 
   .galery__content {
     margin-bottom: 5px;
+  }
+
+  .galery__wrapper {
+    height: 367px;
   }
 
   .catalog {
@@ -925,11 +995,35 @@
     height: 50px;
   }
 
-  .footer__container .header__logo {
+  .footer__logo {
     width: 97px;
   }
 
   .footer__list {
     margin-bottom: 16px;
+  }
+
+  .modal__wrapper {
+    padding: 217px 20px 130px 20px;
+    margin: 15px;
+    background-image: url('../img/modal-320.png');
+    background-position: top center;
+  }
+
+  .modal__text {
+    max-width: 249px;
+  }
+
+  .modal__title {
+    margin: 0;
+  }
+
+  .modal__date {
+    margin-bottom: 12px;
+  }
+
+  .modal__btn {
+    width: 10px;
+    height: 10px;
   }
 }
