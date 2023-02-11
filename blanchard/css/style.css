@@ -214,6 +214,10 @@ body {
   transition: opacity .4s ease-in-out;
 }
 
+.header__login svg path {
+  transition: fill .2s ease-in-out;
+}
+
 .header__link:focus-visible:before,
 .header__login:focus-visible:before {
   opacity: 1;
@@ -287,6 +291,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  transition: border .2s ease-in-out;
 }
 
 .dropdown__link:focus::after,
@@ -343,6 +348,10 @@ body {
   transition: opacity .4s ease-in-out;
 }
 
+.menu__btn svg path {
+  transition: stroke .2s ease-in-out;
+}
+
 .menu__btn:focus-visible:before {
   opacity: 1;
 }
@@ -362,6 +371,7 @@ body {
 .menu__btn--open svg {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  transition: transform .2s ease-in-out;
 }
 
 .header__search {
@@ -371,6 +381,7 @@ body {
   padding: 0;
   min-width: 218px;
   border-bottom: 1px solid var(--white);
+  transition: border-color .2s ease-in-out;
 }
 
 .header__search::-webkit-input-placeholder {
@@ -492,6 +503,7 @@ body {
   font-weight: 700;
   background-color: var(--violet);
   z-index: 1;
+  transition: outline .2s ease-in-out, background-color .2s ease-in-out;
 }
 
 .hero__btn::before {
@@ -514,7 +526,7 @@ body {
 }
 
 .hero__btn:hover:not(:focus-visible) {
-  border: 3px solid var(--white-violet);
+  outline: 3px solid var(--white-violet);
 }
 
 .hero__btn:active:not(:focus-visible) {
@@ -636,6 +648,7 @@ body {
   border: 1px solid var(--white);
   border-radius: 6px;
   min-height: 39px;
+  transition: background .2s ease-in-out;
 }
 
 .choices__inner:hover {
@@ -711,6 +724,7 @@ body {
 
 .galery__label {
   color: var(--white);
+  transition: color .2s ease-in-out;
 }
 
 .galery__input+span {
@@ -743,14 +757,20 @@ body {
 
 .galery__input:checked+span::before {
   opacity: 1;
+  transition: opacity .2s ease-in-out;
 }
 
 .galery__label:hover span {
   border-color: var(--violet);
+  transition: border-color .2s ease-in-out;
 }
 
 .galery__label:active {
   color: var(--violet);
+}
+
+.galery__container {
+  min-width: 0;
 }
 
 .galery__slider {
@@ -761,9 +781,12 @@ body {
 }
 
 .galery__swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   overflow: hidden;
-  width: inherit;
-  height: 408px;
+  height: 440px;
 }
 
 .galery__wrapper {
@@ -776,29 +799,29 @@ body {
 
 .galery-button-next,
 .galery-button-prev {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
   top: 45%;
   z-index: 999;
   height: 30px;
   width: 30px;
 }
 
-.galery__arrow:focus svg {
+.galery__arrow svg path {
+  transition: border .2s ease-in-out, fill .2s ease-in-out;
+}
+
+.galery__arrow:focus svg path {
   border: 2px solid var(--black);
   border-radius: 100px;
 }
 
-.galery__arrow:hover:not(:focus-visible) svg {
+.galery__arrow:hover:not(:focus-visible) svg path {
   fill: var(--violet);
 }
 
-.galery__arrow:active:not(:focus-visible) svg {
+.galery__arrow:active:not(:focus-visible) svg path {
   fill: var(--dark-violet);
-}
-
-.galery__nav {
-  margin-bottom: 30px;
 }
 
 .galery__slide {
@@ -844,7 +867,7 @@ body {
 }
 
 .galery__slide:focus {
-  border: 3px solid var(--dark-violet);
+  outline: 3px solid var(--dark-violet);
 }
 
 .galery__slide:hover::before {
@@ -852,7 +875,7 @@ body {
 }
 
 .galery__slide:active {
-  border: none;
+  outline: none;
 }
 
 .galery__slide:active::before,
@@ -1039,7 +1062,7 @@ body {
 }
 
 .artists {
-  height: 288px;
+  height: 289px;
   margin: 26px 0;
   padding-right: 58px;
   -webkit-box-orient: vertical;
@@ -1054,6 +1077,7 @@ body {
   position: relative;
   line-height: 32px;
   z-index: 1;
+  transition: border-bottom .2s ease-in-out;
 }
 
 .artists__btn::before {
@@ -1086,6 +1110,7 @@ body {
   position: relative;
   margin: 0;
   z-index: 1;
+  transition: color .2s ease-in-out;
 }
 
 .catalog__item {
@@ -1117,6 +1142,7 @@ body {
   border-top: 1px solid var(--white-gray);
   border-bottom: 1px solid var(--white-gray);
   border-collapse: collapse;
+  transition: border-color .2s ease-in-out;
 }
 
 .catalog__date::before {
@@ -1133,6 +1159,10 @@ body {
   z-index: -1;
 }
 
+.catalog__button svg path {
+  transition: fill .2s ease-in-out;
+}
+
 .catalog__button:focus svg path,
 .catalog__button:focus .catalog__date,
 .catalog__button:focus .catalog__date::before {
@@ -1141,14 +1171,18 @@ body {
   opacity: 1;
 }
 
+.catalog__button:hover svg path,
 .catalog__button:hover .catalog__date,
 .catalog__button:hover .catalog__date::before,
-.catalog__button:hover svg path,
 .catalog__button:hover::after {
   color: var(--violet);
+  fill: var(--white-violet);
   background-color: transparent;
   border-color: var(--violet);
-  fill: var(--white-violet);
+}
+
+.catalog__button svg {
+  transition: border .2s ease-in-out;
 }
 
 .catalog__button:active svg {
@@ -1323,6 +1357,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 398px;
+  flex: auto;
   border: 1px solid var(--light-gray);
   border-top: none;
 }
@@ -1504,11 +1539,13 @@ body {
   flex-direction: column;
   border: 1px solid var(--white-gray);
   cursor: pointer;
+  transition: border .2s ease-in-out;
 }
 
 .projects__img {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  transition: filter .2s ease-in-out;
 }
 
 .projects__img:focus {
@@ -1518,6 +1555,11 @@ body {
 
 .projects__slide:hover {
   border-color: var(--violet);
+}
+
+.projects__img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .projects__img:active {
@@ -1561,12 +1603,20 @@ body {
   left: 0;
 }
 
+.btn-effects svg {
+  transition: border .2s ease-in-out;
+}
+
+.btn-effects svg path {
+  transition: fill .2s ease-in-out, stroke .2s ease-in-out;
+}
+
 .btn-effects:focus svg {
   border: 2px solid var(--violet);
   border-radius: 100px;
 }
 
-.btn-effects:hover svg {
+.btn-effects:hover svg path {
   fill: var(--white-violet);
 }
 
@@ -1597,6 +1647,7 @@ body {
   border: 1px solid var(--black-gray);
   border-radius: 100px;
   cursor: pointer;
+  transition: background-color .2s ease-in-out;
 }
 
 .input:focus {
@@ -1626,6 +1677,7 @@ body {
   color: var(--violet);
   border: 2px solid var(--violet);
   z-index: 1;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
 }
 
 .contacts__btn::before {
@@ -1660,6 +1712,10 @@ body {
 
 .contacts__item:not(:last-child) {
   margin-right: 20px;
+}
+
+.contacts__item a svg {
+  transition: opacity .2s ease-in-out, border .2s ease-in-out;
 }
 
 .contacts__item:focus a svg {
@@ -1731,6 +1787,10 @@ body {
 
 .footer__item:not(:last-child) {
   margin-right: 20px;
+}
+
+.footer__item a svg path {
+  transition: fill .2s ease-in-out;
 }
 
 .footer__item:focus a svg path {

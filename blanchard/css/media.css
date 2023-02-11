@@ -60,12 +60,10 @@
     z-index: 1000;
     padding: 97px 50px 48px 56px;
     background: rgba(0, 0, 0, 0.9);
+    transform: translateX(-120%);
     overflow-y: auto;
     visibility: hidden;
-    -webkit-transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
-    transition: visibility .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: visibility .2s ease-in-out, transform .4s ease-in-out;
   }
 
   .header__nav .header__list {
@@ -95,6 +93,7 @@
     border: 2px solid var(--violet);
     border-radius: 100px;
     visibility: hidden;
+    transition: visibility .2s ease-in-out;
   }
 
   .burger {
@@ -181,6 +180,10 @@
     fill: var(--dark-violet);
   }
 
+  .header__link {
+    transition: none;
+  }
+
   .header__form {
     position: relative;
     display: block;
@@ -224,6 +227,7 @@
   .header__btn--active {
     -webkit-transform: translateX(-285px);
     transform: translateX(-285px);
+    transition: transform .4s ease-in-out;
   }
 
   .hero__container {
@@ -253,7 +257,7 @@
   }
 
   .galery {
-    padding-bottom: 104px;
+    padding-bottom: 75px;
   }
 
   .galery__content {
@@ -265,11 +269,11 @@
   }
 
   .galery__swiper {
-    height: 376px;
+    height: 406px;
   }
 
   .galery__wrapper {
-    height: 315px;
+    height: 314px;
   }
 
   .galery-1 {
@@ -311,8 +315,12 @@
   }
 
   .artists {
-    height: 384px;
+    height: 385px;
     padding-right: 0;
+  }
+
+  .catalog {
+    margin-bottom: 80px;
   }
 
   .artists__item {
@@ -502,9 +510,10 @@
   .header__btn--active::before {
     content: '';
     position: absolute;
-    top: -11px;
+    width: 444px;
+    top: -25px;
     left: 0;
-    right: -20px;
+    right: 0;
     bottom: -10px;
     z-index: -1;
     background: rgb(0, 0, 0);
@@ -531,7 +540,7 @@
   }
 
   .galery__swiper {
-    height: 390px;
+    height: 419px;
   }
 
   .galery-1 {
@@ -579,7 +588,7 @@
   }
 
   .artists {
-    height: 288px;
+    height: 289px;
   }
 
   .artists__item {
@@ -663,6 +672,26 @@
 
   .modal__text {
     max-width: 281px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__input--active {
+    width: 399px;
+    transform: translateX(-421px);
+  }
+
+  .header__btn--active {
+    transform: translateX(-478px);
+  }
+
+  .galery__slider {
+    width: 478px;
+  }
+
+  .hero__title {
+    font-size: 64px;
+    line-height: 90px;
   }
 }
 
@@ -765,7 +794,7 @@
   .header__top {
     padding-top: 11px;
     padding-bottom: 11px;
-    margin-right: -5px;
+    margin-right: -0px;
   }
 
   .header__item {
@@ -1059,6 +1088,22 @@
 
   .contacts__container {
     padding-bottom: 18px;
+  }
+
+  .projects__text {
+    padding: 2px;
+    min-width: unset;
+    width: 60px;
+    font-size: 10px;
+    transform: translateX(calc(42% - 0px));
+  }
+
+  .galery__content {
+    min-width: 146px;
+  }
+
+  .header__btn--active::before {
+    width: 40px;
   }
 
   .map {

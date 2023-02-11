@@ -24,8 +24,8 @@ if (mediaQueryHigh.matches) {
 
   menuLinks.forEach((e) => {
     e.addEventListener('click', () => {
-      burger.classList.remove('burger--active');
       menu.classList.remove('header__nav--active');
+      burger.classList.remove('burger--active');
       burger.setAttribute("aria-label", "Открыть навигацию");
       login.style.visibility = 'hidden';
       document.body.classList.remove('stop-scroll');
