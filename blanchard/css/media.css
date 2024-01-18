@@ -1,0 +1,1161 @@
+@media (max-width: 1780px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .galery__slider {
+    width: 930px;
+  }
+
+  .contacts__container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacts__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .contacts__text,
+  .form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header__logo {
+    margin-right: 7px;
+    width: 188px;
+  }
+
+  .header__top {
+    padding-bottom: 27px;
+  }
+
+  .header__wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    padding: 97px 50px 48px 56px;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateX(-120%);
+    overflow-y: auto;
+    visibility: hidden;
+    transition: visibility .2s ease-in-out, transform .4s ease-in-out;
+  }
+
+  .header__nav .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .header__nav .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+
+  .header__nav--active {
+    visibility: visible;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .header__login {
+    position: absolute;
+    z-index: 1000;
+    padding: 22px 88px;
+    top: 579px;
+    left: 50px;
+    border: 2px solid var(--violet);
+    border-radius: 100px;
+    visibility: hidden;
+    transition: visibility .2s ease-in-out;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 26px;
+    z-index: 10000;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+  }
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  .burger__line:nth-child(2) {
+    bottom: 41%;
+    width: 75%;
+  }
+
+  .burger__line:last-child {
+    bottom: -2px;
+    width: 64%;
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger--active .burger__line:first-child {
+    left: 25%;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, top .2s ease-in-out, left .2s ease-in-out;
+    transition: transform .2s ease-in-out, top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+
+  .burger--active .burger__line:last-child {
+    left: 25%;
+    bottom: auto;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, top .2s ease-in-out, left .2s ease-in-out;
+    transition: transform .2s ease-in-out, top .2s ease-in-out, left .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+
+  .burger--active:focus .burger__line,
+  .burger:focus .burger__line,
+  .btn-closed:focus svg rect {
+    background: var(--violet);
+    fill: var(--violet);
+  }
+
+  .burger--active:hover .burger__line,
+  .burger:hover .burger__line,
+  .btn-closed:hover svg rect {
+    background: var(--violet);
+    fill: var(--violet);
+  }
+
+  .burger--active:active .burger__line,
+  .burger:active .burger__line,
+  .btn-closed:active svg rect {
+    background: var(--dark-violet);
+    fill: var(--dark-violet);
+  }
+
+  .header__link {
+    transition: none;
+  }
+
+  .header__form {
+    position: relative;
+    display: block;
+    width: 30px;
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+  }
+
+  .header__bottom,
+  .header__search {
+    display: none;
+  }
+
+  .header--active {
+    display: block;
+  }
+
+  .header__input--active {
+    display: block;
+    -webkit-transform: translateX(-230px);
+    transform: translateX(-230px);
+  }
+
+  .btn-closed {
+    position: absolute;
+    top: 4px;
+  }
+
+  .header__search {
+    position: absolute;
+  }
+
+  .search-btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .header__btn--active {
+    -webkit-transform: translateX(-285px);
+    transform: translateX(-285px);
+    transition: transform .4s ease-in-out;
+  }
+
+  .hero__container {
+    padding-top: 105px;
+    padding-bottom: 137px;
+  }
+
+  .hero__title {
+    margin-bottom: -9px;
+  }
+
+  .hero__text {
+    max-width: 700px;
+    margin-bottom: 155px;
+  }
+
+  .hero__slide:nth-child(1) {
+    background-image: url('../img/hero-bg-1-1024.png');
+  }
+
+  .hero__slide:nth-child(2) {
+    background-image: url('../img/hero-bg-2-1024.png');
+  }
+
+  .hero__slide:nth-child(3) {
+    background-image: url('../img/hero-bg-3-1024.png');
+  }
+
+  .galery {
+    padding-bottom: 75px;
+  }
+
+  .galery__content {
+    min-width: 280px;
+  }
+
+  .galery__slider {
+    width: 592px;
+  }
+
+  .galery__swiper {
+    height: 406px;
+  }
+
+  .galery__wrapper {
+    height: 314px;
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-1024.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-1024.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-1024.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-1024.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-1024.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6-1024.png');
+  }
+
+  .choices {
+    min-width: 280px;
+    margin-bottom: 108px;
+  }
+
+  .artist {
+    padding-right: 0;
+    width: calc((100% - (var(--gap) * 1)) / 2);
+  }
+
+  .catalog__list {
+    width: calc((100% - (var(--gap) * 1)) / 2);
+  }
+
+  .artists {
+    height: 385px;
+    padding-right: 0;
+  }
+
+  .catalog {
+    margin-bottom: 80px;
+  }
+
+  .artists__item {
+    margin-right: 63px;
+  }
+
+  .events__text {
+    padding: 15px 34px 49px 32px;
+    height: 483px;
+  }
+
+  .events__subtitle {
+    margin-bottom: 8px;
+  }
+
+  .events__date {
+    margin-bottom: 4px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .events-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .events__pagination {
+    width: 10px;
+    height: 10px;
+    background: var(--light-gray);
+    border-radius: 100px;
+  }
+
+  .events__pagination:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .events__pagination--active {
+    background: var(--dark-gray);
+  }
+
+  .events__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .events__img {
+    height: 200px;
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-1024.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-1024.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-1024.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-1024.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-1024.png');
+  }
+
+  .events-button-next,
+  .events-button-prev {
+    display: none;
+  }
+
+  .projects {
+    margin-bottom: 82px;
+  }
+
+  .projects__title {
+    margin-bottom: 16px;
+  }
+
+  .projects__slider {
+    padding: 0 54px;
+  }
+
+  .contacts__container {
+    text-align: inherit;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 41px;
+    padding-bottom: 37px;
+  }
+
+  .contacts__text {
+    margin-bottom: 25px;
+  }
+
+  .contacts__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .contacts__btn {
+    padding: 12px 40px;
+  }
+
+  .footer__container {
+    padding-top: 40px;
+  }
+
+  .footer__logo {
+    width: 174px;
+  }
+
+  .footer__link svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .modal__wrapper {
+    padding: 121px 50px 173px 314px;
+    background-image: url('../img/modal-1024.png');
+  }
+
+  .modal__text {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero__slide:nth-child(1) {
+    background-image: url('../img/hero-bg-1-768.png');
+  }
+
+  .hero__slide:nth-child(2) {
+    background-image: url('../img/hero-bg-2-768.png');
+  }
+
+  .hero__slide:nth-child(3) {
+    background-image: url('../img/hero-bg-3-768.png');
+  }
+
+  .header__form {
+    z-index: 10000;
+  }
+
+  .header__input--active {
+    background-color: black;
+    width: 576px;
+    -webkit-transform: translateX(-594px);
+    transform: translateX(-594px);
+  }
+
+  .header__input--active::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  .header__input--active::-moz-placeholder {
+    color: transparent;
+  }
+
+  .header__input--active:-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .header__input--active::-ms-input-placeholder {
+    color: transparent;
+  }
+
+  .header__input--active::placeholder {
+    color: transparent;
+  }
+
+  .header__btn--active {
+    -webkit-transform: translateX(-653px);
+    transform: translateX(-653px);
+  }
+
+  .header__btn--active::before {
+    content: '';
+    position: absolute;
+    width: 444px;
+    top: -25px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+  }
+
+  .galery__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .choices {
+    width: 281px;
+    margin-bottom: 41px;
+  }
+
+  .galery__content {
+    margin-bottom: 15px;
+  }
+
+  .galery__slider {
+    width: 669px;
+  }
+
+  .galery__swiper {
+    height: 419px;
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-768.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-768.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-768.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-768.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-768.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6-768.png');
+  }
+
+  .galery__wrapper {
+    height: 330px;
+  }
+
+  .catalog__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .artist {
+    width: 100%;
+  }
+
+  .catalog__list {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .artists {
+    height: 289px;
+  }
+
+  .artists__item {
+    margin-right: 49px;
+  }
+
+  .artist__img {
+    margin-bottom: 22px;
+  }
+
+  .artist__life {
+    margin-bottom: 6px;
+  }
+
+  .catalog__text {
+    margin-bottom: 20px;
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-768.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-768.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-768.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-768.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-768.png');
+  }
+
+  .projects__descr,
+  .projects__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .projects__slide {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 106px;
+  }
+
+  .contacts__address {
+    line-height: 39px;
+  }
+
+  .contacts__text {
+    margin-bottom: 19px;
+  }
+
+  .form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .form-wrapper {
+    width: calc((100% - (19px * 1)) / 2);
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacts__btn {
+    padding: 11px 28px;
+  }
+
+  .modal__wrapper {
+    padding: 121px 36px 173px 351px;
+    background-image: url('../img/modal-768.png');
+  }
+
+  .modal__text {
+    max-width: 281px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__input--active {
+    width: 399px;
+    transform: translateX(-421px);
+  }
+
+  .header__btn--active {
+    transform: translateX(-478px);
+  }
+
+  .galery__slider {
+    width: 478px;
+  }
+
+  .hero__title {
+    font-size: 64px;
+    line-height: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero__slide:nth-child(1) {
+    background-image: url('../img/hero-bg-1-320.png');
+  }
+
+  .hero__slide:nth-child(2) {
+    background-image: url('../img/hero-bg-2-320.png');
+  }
+
+  .hero__slide:nth-child(3) {
+    background-image: url('../img/hero-bg-3-320.png');
+  }
+
+  .galery-1 {
+    background-image: url('../img/galery-slide-1-320.png');
+  }
+
+  .galery-2 {
+    background-image: url('../img/galery-slide-2-320.png');
+  }
+
+  .galery-3 {
+    background-image: url('../img/galery-slide-3-320.png');
+  }
+
+  .galery-4 {
+    background-image: url('../img/galery-slide-4-320.png');
+  }
+
+  .galery-5 {
+    background-image: url('../img/galery-slide-5-320.png');
+  }
+
+  .galery-6 {
+    background-image: url('../img/galery-slide-6.png');
+  }
+
+  .events-1 {
+    background-image: url('../img/events-engraving-320.png');
+  }
+
+  .events-2 {
+    background-image: url('../img/events-petrov-iliin-320.png');
+  }
+
+  .events-3 {
+    background-image: url('../img/events-formation2020-320.png');
+  }
+
+  .events-4 {
+    background-image: url('../img/events-metaphor-320.png');
+  }
+
+  .events-5 {
+    background-image: url('../img/events-biennale-320.png');
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 1px;
+  }
+
+  .hero__text {
+    padding: 0 20px;
+    margin-bottom: 51px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .search-btn svg,
+  .btn-closed svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-closed {
+    top: 7px;
+  }
+
+  .burger {
+    width: 25px;
+    height: 18px;
+  }
+
+  .header__logo {
+    width: 97px;
+    margin-right: -2px;
+  }
+
+  .header__top {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-right: -0px;
+  }
+
+  .header__item {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .header__nav .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .header__nav {
+    padding: 34px 50px 48px 24px;
+  }
+
+  .header__login {
+    padding: 10px 31px;
+    top: 518px;
+    left: 17px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header__login svg {
+    width: 9px;
+    height: 9px;
+  }
+
+  .search-btn {
+    top: 5px;
+    -webkit-transform: translateX(-24%);
+    transform: translateX(-24%);
+  }
+
+  .header__search {
+    max-width: 218px;
+  }
+
+  .header__btn--active {
+    -webkit-transform: translate(-280px, 2px);
+    transform: translate(-280px, 2px);
+  }
+
+  .header__input--active {
+    -webkit-transform: translateX(-230px);
+    transform: translateX(-230px);
+  }
+
+  .hero__container {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 57px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .hero__btn {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 20px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  .about__title {
+    margin-bottom: 11px;
+  }
+
+  .about {
+    padding-bottom: 41px;
+  }
+
+  .galery {
+    padding-top: 50px;
+    padding-bottom: 62px;
+    margin-bottom: 50px;
+  }
+
+  .galery__title {
+    margin-bottom: 12px;
+  }
+
+  .galery__filter {
+    margin-bottom: 6px;
+  }
+
+  .choices {
+    width: 290px;
+    margin-bottom: 32px;
+  }
+
+  .galery__slider {
+    width: 291px;
+  }
+
+  .galery__wrapper {
+    margin-bottom: 19px;
+  }
+
+  .galery__swiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 430px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .galery__nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 11px;
+  }
+
+  .galery__content {
+    margin-bottom: 5px;
+  }
+
+  .galery__wrapper {
+    height: 367px;
+  }
+
+  .catalog {
+    margin-bottom: 52px;
+  }
+
+  .catalog__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog__title {
+    margin-bottom: 12px;
+  }
+
+  .catalog__text {
+    display: none;
+  }
+
+  .catalog__date {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .catalog__button {
+    padding: 21px 0 20px;
+  }
+
+  .catalog__button svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .artists {
+    height: 100%;
+    margin: 20px 0;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .artist__name {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .artist__life {
+    margin-bottom: 12px;
+  }
+
+  .events {
+    margin-bottom: 50px;
+  }
+
+  .events__title {
+    margin-bottom: 11px;
+  }
+
+  .events__text {
+    padding: 23px 9px 49px 22px;
+    height: 482px;
+  }
+
+  .events__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .events__text a {
+    -webkit-transform: translate(7px, -1px);
+    transform: translate(7px, -1px);
+  }
+
+  .events__link {
+    font-size: 16px;
+  }
+
+  .events__date {
+    -webkit-transform: translate(-7px, -7px);
+    transform: translate(-7px, -7px);
+  }
+
+  .events__descr {
+    padding-right: 19px;
+  }
+
+  .events__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .projects__title {
+    margin-bottom: 11px;
+  }
+
+  .projects__descr {
+    margin-bottom: 19px;
+  }
+
+  .projects__subtitle {
+    margin-bottom: 10px;
+  }
+
+  .projects__slide {
+    height: 100%;
+  }
+
+  .projects__slider {
+    padding: 0 49px;
+  }
+
+  .projects-button-next,
+  .projects-button-prev {
+    top: 25%;
+  }
+
+  .projects {
+    margin-bottom: 5px;
+  }
+
+  .contacts__wrapper {
+    border: none;
+  }
+
+  .contacts__address {
+    line-height: 21px;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input {
+    padding: 3px 24px;
+  }
+
+  .contacts__btn {
+    padding: 11px 33px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+
+  .contacts__links svg {
+    width: 49px;
+    height: 49px;
+  }
+
+  .contacts__container {
+    padding-bottom: 18px;
+  }
+
+  .projects__text {
+    padding: 2px;
+    min-width: unset;
+    width: 60px;
+    font-size: 10px;
+    transform: translateX(calc(42% - 0px));
+  }
+
+  .galery__content {
+    min-width: 146px;
+  }
+
+  .header__btn--active::before {
+    width: 40px;
+  }
+
+  .map {
+    height: 320px;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__link svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__logo {
+    width: 97px;
+  }
+
+  .footer__list {
+    margin-bottom: 16px;
+  }
+
+  .modal__wrapper {
+    padding: 217px 20px 130px 20px;
+    margin: 15px;
+    background-image: url('../img/modal-320.png');
+    background-position: top center;
+  }
+
+  .modal__text {
+    max-width: 249px;
+  }
+
+  .modal__title {
+    margin: 0;
+  }
+
+  .modal__date {
+    margin-bottom: 12px;
+  }
+
+  .modal__btn {
+    width: 10px;
+    height: 10px;
+  }
+}
